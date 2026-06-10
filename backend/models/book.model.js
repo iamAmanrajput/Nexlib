@@ -134,7 +134,7 @@ const bookSchema = new mongoose.Schema(
       },
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 bookSchema.methods.calculateRating = async function () {

@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const mailSender = async (email, title, body) => {
   try {
     const response = await resend.emails.send({
-      from: "NexLib <onboarding@resend.dev>",
+      from: "Nexlib <no-reply@agentsupport.me>",
       to: email,
       subject: title,
       html: body,

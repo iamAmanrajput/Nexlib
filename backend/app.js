@@ -31,7 +31,7 @@ app.use(
   fileUpload({
     useTempFiles: true,
     tempFileDir: "/tmp",
-  })
+  }),
 );
 app.use(
   cors({
@@ -39,7 +39,7 @@ app.use(
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
-  })
+  }),
 );
 
 // Routes
